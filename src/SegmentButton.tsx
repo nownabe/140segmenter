@@ -11,7 +11,7 @@ export default (props: Props) => (
     <RaisedButton
         disabled={props.disabled}
         fullWidth={true}
-        label="Convert"
+        label="Segment"
         onTouchTap={props.onTouchTap}
         primary={true}
     />
