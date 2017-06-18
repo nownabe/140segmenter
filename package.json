@@ -5,9 +5,10 @@
   "description": "140segmenter segments text for Twitter.",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build:html && npm run build:main",
-    "build:html": "cp -f src/index.html dist",
-    "build:main": "cd src/main && tsc",
+    "build": "webpack -p",
+    "//build": "npm run build:html && npm run build:main",
+    "//build:html": "cp -f src/index.html dist",
+    "//build:main": "cd src/main && tsc",
     "//prestart": "npm run build",
     "//start": "cd dist && electron .",
     "start": "webpack-dev-server --inline --progress --hot",
