@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        // "alwaysStrict": true,
+        "baseUrl": "./src",
+        "experimentalDecorators": true,
+        "forceConsistentCasingInFileNames": true,
+        "jsx": "react",
+        "lib": ["dom", "es2017"],
+        "module": "es2015",
+        "moduleResolution": "Node",
+        "noFallthroughCasesInSwitch": true,
+        // "noImplicitAny": true,
+        "noImplicitReturns": true,
+        // "noImplicitThis": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "pretty": true,
+        "removeComments": true,
+        // "strictNullChecks": true,
+        "strict": true,
+        "target": "ES5"
+    }
+}
