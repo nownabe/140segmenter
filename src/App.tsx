@@ -36,7 +36,6 @@ export default class extends React.Component<Props, State> {
             <MuiThemeProvider>
                 <div>
                     { this.state.inProgress ? <Progress value={this.state.progress} /> : null }
-                    { this.state.isCompleted ? <DownloadButton tweets={this.tweets} /> : null }
                     <Text
                         onChange={this.onChangeText.bind(this)}
                         value={this.state.text}
@@ -45,6 +44,7 @@ export default class extends React.Component<Props, State> {
                         disabled={this.state.inProgress}
                         onTouchTap={this.onSegmentTapped.bind(this)}
                     />
+                    { this.state.isCompleted ? <DownloadButton style={{ marginTop: "12px" }} tweets={this.tweets} /> : null }
                 </div>
             </MuiThemeProvider>
         )

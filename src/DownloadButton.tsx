@@ -3,6 +3,7 @@ import * as React from "react";
 import { RaisedButton } from "material-ui";
 
 interface Props {
+    style: object;
     tweets: string[];
 }
 
@@ -19,6 +20,7 @@ export default (props: Props) => {
             fullWidth={true}
             label="Download"
             onTouchTap={onTouchTap}
+            style={props.style}
         />
     )
 };
